@@ -2,211 +2,457 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+	<meta name="description" content="Offizielle Seite des Autoren-Duos Kai A. Wissmann & Viktor Kian. Entdecken Sie die Fächer-Chroniken und das Erwachen der Wassergeister – Mystery & Krimis aus Karlsruhe.">
+<meta name="keywords" content="Kai A. Wissmann, Viktor Kian, Autoren Karlsruhe, Fächer-Chroniken, Wassergeister, Krimi Karlsruhe, Mystery, Hörprobe">
+<meta name="author" content="Kai A. Wissmann & Viktor Kian">
+<meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wissmann & Kian: Schwarzer Humor und weiße Laken</title>
+    <title>Kai A. Wissmann & Viktor Kian - Autoren Multiversum</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="canonical" href="https://autoren-multiversum.de">
+	 <link rel="canonical" href="https://kai-axon-wissmann.blogspot.com">
     <style>
-        /* Grunddesign - Modern & Edel */
-        body { 
-            font-family: 'Georgia', serif; 
-            background-color: #f4f1ea; /* Ganz leichtes Pergament-Grau */
-            color: #333; 
-            line-height: 1.8; 
-            margin: 0; 
-            padding: 0; 
-        }
-        
-        nav { 
-            background: #1a1a1a; 
-            padding: 20px 0; 
-            text-align: center; 
-            position: sticky; 
-            top: 0; 
-            z-index: 1000; 
-            box-shadow: 0 2px 15px rgba(0,0,0,0.4); 
-        }
-        nav a { 
-            color: #fff; 
-            margin: 0 20px; 
-            text-decoration: none; 
-            font-size: 0.9em; 
-            text-transform: uppercase;
-            letter-spacing: 2px; 
-            transition: 0.3s; 
-        }
-        nav a:hover { color: #d4af37; } /* Gold-Effekt */
+details { 
+    width: 90%; 
+    max-width: 800px; 
+    background: rgba(10, 10, 10, 0.6); /* Dunkler, mystischer Hintergrund */
+    border: 1px solid rgba(212, 175, 55, 0.4); /* Der goldene Rahmen */
+    border-radius: 4px; /* Leicht abgerundet für edle Optik */
+    margin: 15px 0; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(212, 175, 55, 0.05); 
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
 
-        /* 3D Banner */
-        .hero-3d { width: 100%; height: 50vh; min-height: 400px; background: #000; }
+/* Effekt, wenn man die Box öffnet oder mit der Maus darüber fährt */
+details[open], details:hover {
+    border-color: rgba(212, 175, 55, 0.8);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), inset 0 0 20px rgba(212, 175, 55, 0.1);
+}
 
-        .container { max-width: 850px; margin: 50px auto; padding: 0 20px; }
-        section { margin-bottom: 80px; }
-        
-        /* Karten-Design vereinheitlicht */
-        .card { 
-            background: white; 
-            padding: 40px; 
-            border-radius: 4px; /* Eckiger wirkt literarischer */
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
-            border-top: 4px solid #1a1a1a; 
-        }
-        
-        h2 { 
-            font-size: 1.8em; 
-            color: #1a1a1a; 
-            margin-top: 0; 
-            text-transform: uppercase; 
-            letter-spacing: 1px;
-            border-bottom: 1px solid #d4af37;
-            display: inline-block;
-            padding-bottom: 5px;
-            margin-bottom: 25px;
-        }
+summary { 
+    padding: 20px; 
+    font-size: 1.3rem; 
+    font-weight: bold; 
+    cursor: pointer; 
+    outline: none; 
+    list-style: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f1e5ac; /* Helleres Gold für die Überschrift */
+}
 
-        h3 { color: #d4af37; font-style: italic; margin-top: 0; }
+.inhalt { 
+    padding: 10px 30px 40px 30px; 
+    color: #ccc; 
+    line-height: 1.8; 
+    text-align: left;
+    border-top: 1px solid rgba(212, 175, 55, 0.1); /* Trennlinie innen */
+}
 
-        /* Geister-Alarm Box */
-        .pieppen-alarm { 
-            background: #1a1a1a; 
-            color: #eee;
-            padding: 40px; 
-            text-align: center; 
-            border-radius: 4px; 
-        }
-        .warnung { 
-            color: #d4af37; 
-            font-weight: bold; 
-            text-transform: uppercase; 
-            display: block; 
-            margin-top: 20px; 
-            letter-spacing: 3px; 
-            font-size: 1.2em;
+
+@keyframes geisterGluehen {
+    0% { 
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.3); 
+    }
+    50% { 
+        /* Mehrere Schichten Schatten für intensiveres Glühen */
+        text-shadow: 
+            0 0 15px rgba(224, 215, 198, 0.7), 
+            0 0 30px rgba(212, 175, 55, 0.5),
+            0 0 45px rgba(212, 175, 55, 0.3); 
+    }
+    100% { 
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.3); 
+    }
+}
+
+
+
+.handschrift {
+    font-family: 'Meddon', cursive;
+    font-size: 2.8rem;
+    color:#008080  !important; /* !important erzwingt Türkis */
+    line-height: 1.6;
+    max-width: 900px;
+    text-shadow: 2px 2px 0px #000, -1px -1px 0px #000; 
+    letter-spacing: 2px;
+}
+        /* Animationen */
+        @keyframes auftauchen {
+            from { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+            to { opacity: 1; transform: translateY(0); filter: blur(0px); }
         }
 
-        /* Audio Sektion */
-        .audio-box {
-            background: #fff;
-            padding: 30px;
-            margin-top: 20px;
-            border-radius: 4px;
-            border: 1px solid #e0e0e0;
-        }
-        audio { width: 100%; margin-top: 10px; filter: sepia(20%) contrast(90%); }
-
-        /* Der goldene Kontakt-Button */
-        .cta-button { 
-            display: inline-block; 
-            background: #1a1a1a; 
-            color: #d4af37; 
-            padding: 18px 40px; 
-            border: 1px solid #d4af37;
-            text-decoration: none; 
-            font-weight: bold; 
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-top: 30px; 
-            transition: 0.4s; 
-        }
-        .cta-button:hover { 
-            background: #d4af37; 
-            color: #1a1a1a; 
+        @keyframes deepPulse {
+            0% { opacity: 0.4; letter-spacing: 18px; filter: blur(1px); }
+            50% { opacity: 1; letter-spacing: 28px; filter: blur(0px); text-shadow: 0 0 25px #d4af37; }
+            100% { opacity: 0.4; letter-spacing: 18px; filter: blur(1px); }
         }
 
-        img { 
-            max-width: 100%; 
-            height: auto; 
-            border-radius: 2px; 
-            display: block; 
-            margin: 30px auto; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        body {
+            margin: 0;
+            background-color: #050505;
+            background-image: radial-gradient(circle at 50% 50%, #1a1510 0%, #050505 100%);
+            background-attachment: fixed;
+            color: #d4af37;
+            font-family: 'Georgia', serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
         }
 
-        footer { 
-            text-align: center; 
-            padding: 80px 20px; 
-            font-size: 0.85em; 
-            color: #888; 
-            background: #1a1a1a; 
+        /* Die "Geister-Klasse" für alles, was einblenden soll */
+        .reveal { opacity: 0; }
+        .reveal.active { animation: auftauchen 2.5s ease-out forwards; }
+
+        nav {
+            position: fixed; top: 0; width: 100%;
+            background: rgba(0,0,0,0.85); backdrop-filter: blur(10px);
+            padding: 15px 0; text-align: center; z-index: 1000;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
         }
-        footer p { margin: 5px 0; }
+
+        nav a { color: #d4af37; text-decoration: none; margin: 0 12px; font-weight: bold; font-size: 0.75rem; text-transform: uppercase; }
+
+        section { padding: 15px 20px 60px 20px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        section::after { content: ""; width: 150px; height: 1px; background: linear-gradient(to right, transparent, #d4af37, transparent); margin-top: 80px; }
+
+        .handschrift { font-family: 'Meddon', cursive; font-size: 1.8rem; color: #e0d7c6; line-height: 1.8; max-width: 800px; margin-top: 40px; }
+        .multiversum-puls { display: block; margin-top: 40px; font-size: 1.4rem; font-weight: bold; text-transform: uppercase; animation: deepPulse 6s infinite ease-in-out; }
+
+        details { width: 90%; max-width: 800px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 8px; margin: 15px 0; }
+        summary { padding: 20px; font-size: 1.2rem; font-weight: bold; cursor: pointer; outline: none; list-style: none; }
+        summary::before { content: "◈ "; color: #d4af37; margin-right: 10px; }
+        .inhalt { padding: 0 30px 30px 30px; color: #ccc; line-height: 1.8; text-align: left; }
     </style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kai A. Wissmann",
+  "jobTitle": "Autor",
+  "url": "https://autoren-multiversum.de"
+}
+</script>
+
 </head>
-<body>
+<body oncontextmenu="return false;">
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#buecher">Werke</a>
-    <a href="#coming-soon">Audio</a>
-    <a href="#medium">Über Uns</a>
-    <a href="#contact">Kontakt</a>
-</nav>
+    <nav>
+        <a href="#home">Home</a> 
+        <a href="#werke">Werke</a>
+        <a href="#audio">Audio</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#ueber">Über uns</a>
+        <a href="#formular">Vertrag</a>
+        <a href="#impressum">Impressum</a>
+    </nav>
 
-<div class="hero-3d" id="home">
-    <iframe src='https://my.spline.design/liquidglasslgw09-bwLcgOmt61uRJDK5Wl2kMOtB/' frameborder='0' width='100%' height='100%'></iframe>
-</div>
-
-<div class="container">
-
-    <section id="buecher">
-        <div class="card">
-            <h2>Die Fächer-Chroniken</h2>
-            <h3>Wenn die Toten Charleston tanzen</h3>
-            <p>Karlsruhe im 18. Jahrhundert. Wenn das Recht der Lebenden versagt, schlägt die Stunde der weißen Laken – mit Champagner im Glas und Sarkasmus auf den Lippen...</p>
-            <p style="font-size: 0.9em; color: #777;"><em>Status: In Bearbeitung im Autoren-Duo.</em></p>
-        </div>
-    </section>
-
-    <section id="geister">
-       <div class="pieppen-alarm">
-            <h2 style="color: #fff; border-color: #d4af37;">Vorsicht: Quarz-Pieppen</h2>
-            <p>Hörst du sie schon? Die Geister von Karlsruhe sind erwacht. Sie tragen Pailletten, rauchen Zigarren und haben keine Geduld für Mörder. Sie lauern unter deinen Füßen und wissen mehr, als man einem Kieselstein zutrauen würde.</p>
-            <span class="warnung">Geisterstunde</span>
-        </div>
-    </section>
-
-    <section id="coming-soon">
-        <div class="card">
-            <h2>Das Erwachen der Wassergeister</h2>
-            <p><strong>Band 1 & 2 stehen bereit.</strong></p>
-            <p>Vergessen Sie das klassische weiße Laken. Unsere Geister sind flüssig, innovativ und gefährlich ehrlich. Erleben Sie Karlsruhe durch die Augen jener, die unter der Oberfläche lauern.</p>
-            
-            <div class="audio-box">
-                <p style="margin: 0; font-weight: bold;">🔊 Hörprobe: Victor Kian</p>
-                <p style="font-size: 0.85em; color: #666; margin-bottom: 10px;">„Die Wellen Karlsruhes in seiner Stimme.“</p>
-                <audio controls><source src="kawkian.mp3" type="audio/mpeg"></audio>
-            </div>
-
-            <div class="audio-box">
-                <p style="margin: 0; font-weight: bold;">🔊 Die Stimme: Kai A. Wissmann</p>
-                <p style="font-size: 0.85em; color: #666; margin-bottom: 10px;">„Tauchen Sie ein in die Atmosphäre unserer Wassergeister.“</p>
-                <audio controls><source src="kawkian.mp3" type="audio/mpeg"></audio>
+    <section id="home">
+        <!-- Das Logo blendet jetzt auch ein -->
+        <div class="reveal active" style="font-family: 'Courier New', monospace; margin-bottom: 20px;">
+            <div style="display: inline-block; position: relative;">
+                <div style="position: absolute; left: -85px; top: -5%; height: 110%; width: 18px; background: linear-gradient(to bottom, #f1e5ac, #d4af37, #8a6d3b);"></div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 6rem; font-weight: 900; color: #f1e5ac; letter-spacing: 10px;">K<span style="position: relative;">A<span style="position: absolute; bottom: -24px; left: 50%; transform: translateX(-50%); width: 18px; height: 18px; background: #d4af37; border-radius: 50%; box-shadow: 0 0 15px #d4af37;"></span></span>W</span>
+                    <span style="margin: 0 50px; color: #d4af37; font-size: 5rem; font-weight: bold;">+³</span>
+                    <span style="font-size: 6rem; font-weight: 900; color: #f1e5ac; letter-spacing: 10px;">KIAN</span>
+                </div>
+                <span class="multiversum-puls">M U L T I V E R S U M</span>
             </div>
         </div>
-    </section>
-
-    <section id="medium">
-        <div class="card">
-            <h2>Über Uns</h2>
-            <p><strong>Kai A. Wissmann & Viktor Kian:</strong> Wenn poetische Tiefe auf messerscharfe Erzählkunst trifft. Wir erwecken das barocke Karlsruhe zum Leben – inklusive der Geister, die dort noch eine Rechnung offen haben.</p>
-            
-            <img src="kawkianautorenduo.png" alt="Kai A. Wissmann & Viktor Kian">
-            
-            <p style="font-size: 0.8em; color: #aaa; text-align: center;">G.R. Immen | Savani von Vaske | Eleonor Nike-Berde</p>
+        
+        <div class="handschrift reveal active">
+            Willkommen im Multiversum... <br>
+            Wo Geschichten wie Wassergeister durch die Zeit fließen.
         </div>
     </section>
 
-    <section id="contact" style="text-align: center;">
-        <h2>Kontakt</h2>
-        <p>Schreiben Sie uns, bevor es die Geister tun!</p>
-        <a href="mailto:post@autoren-multiversum.de" class="cta-button">Flaschenpost senden</a>
-    </section>
-
+    <section id="werke">
+        <details class="reveal">
+            <summary>Unsere Werke</summary>
+           <div class="inhalt">
+    <h3 style="color: #f1e5ac; font-family: 'Georgia', serif;">Moosbacher Märchen</h3>
+    <p style="font-style: italic; color: #d4af37; margin-bottom: 20px;">„Glaubst du wirklich, dein Haus steht auf festem Boden?“</p>
+    
+    <p>In der Moosgasse in Baden entpuppt sich ein harmloser Gartenbau als Eintritt in ein dreihundert Jahre altes, nasses Grab. Millionen leuchtender Kiesel sind die Akten eines vergessenen Reiches.</p>
+    
+    <blockquote style="border-left: 2px solid #d4af37; padding-left: 15px; margin: 20px 0; color: #7fffd4;">
+        „Ein Buch wie ein Fluss: Es gluckst, es reißt dich mit und am Ende hast du nasse Füße und ein Lachen im Gesicht.“
+    </blockquote>
 </div>
 
-<footer>
-    <img src="logojb.png" alt="Logo" style="width: 60px; height: auto; margin-bottom: 20px; filter: grayscale(100%) brightness(200%);">
-    <p>© 2026 Author Engine &plusmn;&sup3; ARTBECKO</p>  
-    <p style="font-style: italic;">Autoren-Multiversum</p>
-</footer>
+        </details>
+    </section>
 
+    <section id="audio">
+        <details class="reveal">
+            <summary>Audio & Stimmen</summary>
+            <div class="inhalt">Hören Sie das Wispern der Geister.</div>
+        </details>
+    </section>
+
+   <section id="galerie">
+    <details class="reveal">
+        <summary>Bildgalerie & Illustrationen</summary>
+        <div class="inhalt">
+            <p style="text-align: center; margin-bottom: 20px; font-style: italic; color: #d4af37;">
+                Fragmente aus dem Barock-Delta...
+            </p>
+            
+            <!-- Galerie Raster -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
+                
+                <!-- Platzhalter für deine Bilder - Ersetze 'bild1.jpg' etc. durch deine Dateinamen -->
+                <div class="galerie-item">
+                    <img src="siegel.jpg" alt="Das Siegel" style="width: 100%; border: 1px solid rgba(212,175,55,0.3); transition: transform 0.3s;">
+                    <p style="font-size: 0.7rem; margin-top: 5px; color: #888;">Das Siegel der Wächter</p>
+                </div>
+
+                <div class="galerie-item">
+                    <img src="kutsche.jpg" alt="Goldene Kutsche" style="width: 100%; border: 1px solid rgba(212,175,55,0.3); transition: transform 0.3s;">
+                    <p style="font-size: 0.7rem; margin-top: 5px; color: #888;">Die versunkene Pracht</p>
+                </div>
+
+                <div class="galerie-item">
+                    <img src="wassergeist.jpg" alt="Der Wassergeist" style="width: 100%; border: 1px solid rgba(212,175,55,0.3); transition: transform 0.3s;">
+                    <p style="font-size: 0.7rem; margin-top: 5px; color: #888;">Begegnung am Gulli</p>
+                </div>
+
+                <div class="galerie-item">
+                    <img src="portal.jpg" alt="Das Portal" style="width: 100%; border: 1px solid rgba(212,175,55,0.3); transition: transform 0.3s;">
+                    <p style="font-size: 0.7rem; margin-top: 5px; color: #888;">Übergang ins Multiversum</p>
+                </div>
+
+            </div>
+        </div>
+    </details>
+</section>
+<section id="galerie">
+    <details class="reveal">
+        <summary>Bildgalerie & Illustrationen</summary>
+        <div class="inhalt">
+            <p style="text-align: center; color: #d4af37; font-style: italic;">Bilder aus dem Moosbacher Märchen</p>
+            
+            <!-- Einfaches Raster für die Bilder -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+                
+                <!-- Bild 1: Die Ziege -->
+                <div style="width: 200px; text-align: center;">
+                    <img src="ziege.jpg" alt="Ziege" style="width: 100%; border: 2px solid #d4af37; border-radius: 8px;">
+                    <p style="font-size: 0.8rem; color: #ccc;">Der Gumbeni-Wächter</p>
+                </div>
+
+                <!-- Bild 2: Das Siegel -->
+                <div style="width: 200px; text-align: center;">
+                    <img src="siegel.jpg" alt="Siegel" style="width: 100%; border: 2px solid #d4af37; border-radius: 8px;">
+                    <p style="font-size: 0.8rem; color: #ccc;">Das goldene Siegel</p>
+                </div>
+
+                <!-- Bild 3: Die Kutsche -->
+                <div style="width: 200px; text-align: center;">
+                    <img src="kutsche.jpg" alt="Kutsche" style="width: 100%; border: 2px solid #d4af37; border-radius: 8px;">
+                    <p style="font-size: 0.8rem; color: #ccc;">Die versunkene Pracht</p>
+                </div>
+
+            </div>
+        </div>
+    </details>
+</section>
+
+
+<style>
+    /* Kleiner Hover-Effekt: Bilder werden beim Drüberfahren leicht größer */
+    .galerie-item:hover img {
+        transform: scale(1.05);
+        border-color: #d4af37 !important;
+        box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    }
+</style>
+
+
+    <section id="ueber">
+        <details class="reveal">
+            <summary>Über das Multiversum</summary>
+            <div class="inhalt">Willkommen in einer Welt, in der die Grenzen zwischen Realität und Übernatürlichem verschwimmen.
+<b<Das Autoren-Duo Wissmann & Kian</b> entführt seine Leser in das Karlsruher Umland des 17. und 18. Jahrhunderts. Lange bevor der erste Stein des Schlosses gelegt wurde, warteten in den dichten Wäldern und alten Siedlungen bereits düstere Geheimnisse und unerklärliche Phänomene darauf, entdeckt zu werden.<br>
+<b>Die Fächer-Chroniken</b><br>
+In den Fächer-Chroniken erwacht die dunkle Vergangenheit zum Leben. Tauchen Sie ein in eine Ära, in der Geistergeschichten in den Ruinen des 17. Jahrhunderts ihren Ursprung fanden. Unsere Werke verbinden akribische historische Recherche mit einer Gänsehaut-Garantie, die bereits in der Zeit vor „Carols Ruhe“ beginnt.<br>
+<b>Die Köpfe hinter den Geschichten</b>
+Kai A. Wissmann liebt die Details der Geschichte und baut das Fundament unserer Welten – von den mittelalterlichen Wurzeln der Vororte bis zur barocken Planung. Victor Kian haucht den Schatten Leben ein und sorgt für die atmosphärische Tiefe. Gemeinsam erschaffen wir ein Multiversum für die Sinne.
+</div>
+<div class="inhalt">
+    <p><strong>Eine Warnung an die Landratten:</strong> Bevor Sie dieses Multiversum betreten, kontrollieren Sie Ihre Schuhe. Wenn Sie fest an soliden Beton glauben, werden wir hier keine Freunde.</p>
+    
+    <p>Dies ist kein historisches Gutachten, sondern die Wahrheit, die man hört, wenn man den Kopf tief genug in den badischen Schlamm steckt. Wir ehren die Sprache der Heimat und den Wahnsinn der Nachbarschaft.</p>
+    
+    <p style="font-size: 0.9rem; color: #888;">Kai A. Wissmann & Victor Kian – Die Hüter des Barock-Deltas.</p>
+</div>
+
+        </details>
+    </section>
+	
+	<section id="formular">
+    <details class="reveal">
+        <summary>Dichterbund & Codex</summary>
+        <div class="inhalt">
+            
+            <!-- ABSCHNITT 1: DER VERTRAG (Akkordeon) -->
+            <div style="border: 1px solid rgba(212, 175, 55, 0.3); padding: 20px; border-radius: 8px; margin-bottom: 30px; background: rgba(255,255,255,0.02);">
+                <h2 style="color: #f1e5ac; text-align: center; font-size: 1.2rem; letter-spacing: 2px;">Res publica litteraria Lex Admissionis </h2>
+                <p style="text-align: center; font-style: italic; font-size: 0.8rem; color: #d4af37;">Autoren-Konsortium KAW & Kian HUB</p>
+
+                <!-- Vertragsparagraphen (Beispielhaft zwei eingebaut) -->
+                <details style="margin-top: 15px; border-bottom: 1px solid rgba(212,175,55,0.1);">
+                    <summary style="color: #d4af37; cursor: pointer; padding: 10px 0;">§ 1 Ziel und Spirit</summary>
+                    <div style="padding: 10px; font-size: 0.9rem; color: #ccc;">
+                        Die Unterzeichner bilden eine Arbeitsgemeinschaft zur Veröffentlichung über Amazon KDP. Ziel ist gegenseitige Förderung auf Basis von Fairness und Transparenz.
+                    </div>
+                </details>
+
+                <details style="border-bottom: 1px solid rgba(212,175,55,0.1);">
+                    <summary style="color: #d4af37; cursor: pointer; padding: 10px 0;">§ 4 Lektorat & Deep-Edit</summary>
+                    <div style="padding: 10px; font-size: 0.9rem; color: #ccc;">
+                        Jedes Buch braucht ein internes Lektorat. Deep-Edit Kosten (ca. 400 €) werden für Neulinge als „Schulden“ geführt und mit ersten Gewinnen verrechnet.
+                    </div>
+                </details>
+                <!-- Du kannst hier weitere <details> für §2, §3 etc. einfügen -->
+            </div>
+
+            <!-- ABSCHNITT 2: DER FRAGEBOGEN (Codex Form) -->
+            <div style="border: 1px solid rgba(212, 175, 55, 0.3); padding: 20px; border-radius: 8px; background: rgba(0,0,0,0.2);">
+                <h2 style="color: #f1e5ac; font-size: 1.1rem; margin-bottom: 20px;">📜 Codex KAW: Die Manuskript-Exegese</h2>
+                
+                <form name="codex-auswertung" method="POST" data-netlify="true" style="display: flex; flex-direction: column; gap: 15px; text-align: left;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <label style="font-size: 0.8rem;">Titulus: <input type="text" name="titel" required style="width: 100%; background: #111; border: 1px solid #333; color: #fff; padding: 8px;"></label>
+                        <label style="font-size: 0.8rem;">Auctor: <input type="text" name="autor" required style="width: 100%; background: #111; border: 1px solid #333; color: #fff; padding: 8px;"></label>
+                    </div>
+
+                    <label style="font-size: 0.8rem;">Status Quo:
+                        <select name="status" style="width: 100%; background: #111; border: 1px solid #333; color: #fff; padding: 8px;">
+                            <option value="inspiration">Erste Inspiration</option>
+                            <option value="rohfassung">Werden (Rohfassung)</option>
+                            <option value="vollendung">Vollendung</option>
+                        </select>
+                    </label>
+
+                    <label style="font-size: 0.8rem;">Synopsis (Kern der Erzählung):
+                        <textarea name="synopsis" rows="3" style="width: 100%; background: #111; border: 1px solid #333; color: #fff; padding: 8px;"></textarea>
+                    </label>
+
+                    <button type="submit" style="background: #d4af37; color: #000; border: none; padding: 12px; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; border-radius: 4px;">
+                        Exegese absenden
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </details>
+</section>
+
+	
+	<section id="formular">
+    <details class="reveal">
+        <summary>1 & 2</summary>
+        <div class="inhalt">
+            
+            <!-- Unter-Klapptext für den Vertrag -->
+            <details style="border: 1px solid rgba(212,175,55,0.2); margin-bottom: 10px;">
+                <summary style="font-size: 1rem; padding: 10px;">📜 11111</summary>
+                <div style="padding: 15px; font-size: 0.85rem; color: #ccc; background: rgba(0,0,0,0.3);">
+                    <strong>222222</strong><br>
+                    Hier fügst du einfach den Text aus deiner vertrag.html ein...
+                </div>
+            </details>
+
+            <!-- Unter-Klapptext für den Fragebogen -->
+            <details style="border: 1px solid rgba(212,175,55,0.2); margin-bottom: 10px;">
+                <summary style="font-size: 1rem; padding: 10px;">🔍 Zum Fragebogen</summary>
+                <div style="padding: 15px;">
+                    Hier könnte ein kleines Kontaktformular stehen...
+                </div>
+            </details>
+
+        </div>
+    </details>
+</section>
+
+
+   <section id="formular">
+    <details class="reveal">
+        <summary>Mitgliedschaft & Dokumente</summary>
+        <div class="inhalt" style="text-align: center;">
+            <p>Wählt Euer Dokument, um es zu öffnen:</p>
+            
+            <!-- Die Buttons untereinander -->
+            <div style="display: flex; flex-direction: column; gap: 15px; max-width: 300px; margin: 20px auto;">
+                
+                <a href="formular.html" target="_blank" style="display: block; padding: 12px; border: 1px solid #d4af37; color: #d4af37; text-decoration: none; border-radius: 4px; background: rgba(212, 175, 55, 0.1);">
+                    📝 Zum Formular
+                </a>
+
+                <a href="vertrag.html" target="_blank" style="display: block; padding: 12px; border: 1px solid #d4af37; color: #d4af37; text-decoration: none; border-radius: 4px; background: rgba(212, 175, 55, 0.1);">
+                    📜 Den Vertrag lesen
+                </a>
+
+                <a href="fragebogen.html" target="_blank" style="display: block; padding: 12px; border: 1px solid #d4af37; color: #d4af37; text-decoration: none; border-radius: 4px; background: rgba(212, 175, 55, 0.1);">
+                    🔍 Zum Fragebogen
+                </a>
+
+                <a href="archiv.html" style="display: block; padding: 12px; border: 1px solid #d4af37; color: #d4af37; text-decoration: none; border-radius: 4px; background: rgba(212, 175, 55, 0.1);">
+                    ✨ Weiteres Material im ARCHIV 
+                </a>
+                
+            </div>
+            <p style="font-size: 0.8rem; color: #777; margin-top: 15px;">Die Dokumente öffnen sich in einem neuen Fenster.</p>
+        </div>
+    </details>
+</section>
+
+
+    <section id="impressum">
+        <details class="reveal">
+            <summary>Impressum & Rechtliches</summary>
+            <div class="inhalt">Angaben gemäß § 5 TMG.</div>
+			
+			<!-- FINALES COPYRIGHT MIT SIEGEL-HINTERGRUND -->
+<div style="position: relative; text-align: center; margin-top: 60px; padding: 40px 0; border-top: 1px solid rgba(212, 175, 55, 0.2); overflow: hidden;">
+    
+    <!-- Das Siegel als Wasserzeichen im Hintergrund -->
+    <img src="siegel.jpg" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 200px; opacity: 0.15; pointer-events: none; filter: sepia(1) saturate(2);">
+
+    <div style="position: relative; z-index: 2;">
+        <p style="font-size: 0.8rem; color: #fff; letter-spacing: 2px; margin: 0;">© 2026 AUTHOR ENGINE · ARTBECKO</p>
+        <p style="font-size: 0.6rem; opacity: 0.5; margin-top: 5px;">Powered by Hybrid Intelligence & Artistic Passion</p>
+    </div>
+</div>
+
+        </details>
+    </section>
+
+    <script>
+        // Beim Neuladen nach oben springen
+        window.onload = function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 10);
+        };
+
+        // Scroll-Animation Trigger
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal(); // Initialer Check
+    </script>
 </body>
 </html>

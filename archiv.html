@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Das Konsortium - Portal der Epochen</title>
+    <!-- Einbindung der Schriften -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #050505;
+            background-image: 
+                radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%);
+            color: #fff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Geändert, damit es bei vielen Boxen nicht oben rausrutscht */
+            min-height: 100vh;
+            padding-top: 50px;
+            font-family: 'Georgia', serif;
+            overflow-x: hidden;
+        }
+
+        /* Der wandernde Lichtstrahl im Hintergrund */
+        @keyframes moveLight {
+            0%   { transform: translateX(-15%) translateY(-15%) rotate(0deg); }
+            50%  { transform: translateX(15%) translateY(15%) rotate(5deg); }
+            100% { transform: translateX(-15%) translateY(-15%) rotate(0deg); }
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            top: -50%; left: -50%; width: 200%; height: 200%;
+            background: linear-gradient(45deg, 
+                transparent 42%, 
+                rgba(227, 192, 125, 0.08) 50%, 
+                transparent 58%);
+            pointer-events: none;
+            z-index: 1;
+            animation: moveLight 15s infinite ease-in-out;
+        }
+
+        h1 {
+            font-family: 'UnifrakturMaguntia', serif;
+            font-size: 3.5em;
+            margin: 0;
+            background: linear-gradient(to bottom, #f9f295 0%, #e3c07d 50%, #b38b4d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.8));
+            letter-spacing: 3px;
+            z-index: 2;
+            position: relative;
+            text-align: center;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 60%;
+            height: 2px;
+            margin: 15px auto 30px;
+            background: linear-gradient(to right, transparent, #e3c07d, #f9f295, #e3c07d, transparent);
+        }
+
+        /* Container für alle Links */
+        .portal-wrapper {
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        /* Die zwei großen Haupt-Links */
+        .main-links {
+            display: flex;
+            gap: 40px;
+        }
+
+        /* Das Raster für die restlichen 7 Seiten */
+        .sub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            border: 1px solid #444;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(5px);
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+
+        /* Große Boxen */
+        .barock {
+            color: #e3c07d;
+            border-color: #b38b4d;
+            font-family: 'Cinzel', serif;
+            padding: 20px 40px;
+        }
+
+        /* Kleine Boxen im Raster */
+        .small-box {
+            padding: 15px;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+        }
+
+        .cyber {
+            color: #00f2ff;
+            border-color: #00f2ff;
+            font-family: 'Courier New', monospace;
+            padding: 20px 40px;
+        }
+
+        a:hover {
+            transform: translateY(-3px);
+            color: #fff;
+        }
+
+        .barock:hover { box-shadow: 0 0 20px rgba(227, 192, 125, 0.3); border-color: #e3c07d; }
+        .cyber:hover { box-shadow: 0 0 20px rgba(0, 242, 255, 0.4); }
+
+        /* Zitate im Footer */
+        .footer-text {
+            margin: 50px 0;
+            text-align: center;
+            z-index: 2;
+            max-width: 700px;
+        }
+
+        .note { font-style: italic; color: #555; margin-bottom: 20px; }
+        .quote { font-family: 'Cinzel', serif; color: #8b5e3c; font-size: 0.85em; line-height: 1.6; opacity: 0.8; }
+		
+		.siegel-container {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    z-index: 2;
+    position: relative;
+}
+
+.wachssiegel {
+    transition: all 0.5s ease; /* Macht die Bewegung weich */
+    cursor: pointer;
+}
+
+.wachssiegel:hover {
+    transform: rotate(0deg) scale(1.1); /* Es richtet sich auf und wird größer */
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.6), 0 0 10px rgba(255, 215, 0, 0.4);
+    filter: brightness(1.2); /* Das Rot wird intensiver */
+}
+
+.wachssiegel:hover .siegel-logo {
+    color: rgba(255, 215, 0, 1); /* Das Gold leuchtet kräftig auf */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+
+.siegel-logo {
+    color: rgba(255, 215, 0, 0.6); /* Goldenes, leicht verblasstes Logo */
+    font-family: 'UnifrakturMaguntia', serif;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    user-select: none;
+}
+
+.siegel-rand {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    border: 3px double #801010;
+    border-radius: 53% 47% 52% 48% / 47% 53% 47% 53%; /* Unregelmäßiger Rand */
+    opacity: 0.5;
+}
+
+.siegel-text {
+    color: #8b5e3c;
+    font-family: 'Cinzel', serif;
+    font-size: 0.9em;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Archivum des Konsortiums</h1>
+
+    <div class="portal-wrapper">
+        
+        <!-- Die zwei Haupt-Epochen -->
+        <div class="main-links">
+            <a href="pakt.html" class="barock">ANNUM 1715<br>Das Rescriptum</a>
+            <a href="freiheit.html" class="cyber">ANNUM 2215<br>Das Manifest</a>
+        </div>
+
+        <!-- Die 7 neuen Archiv-Einträge -->
+        <div class="sub-grid">
+            <a href="ki_help.html" class="barock small-box">ANNUM 1785<br>Auxilium AI</a>
+            <a href="rechner.html" class="barock small-box">ANNUM 1785<br>Calculatrum</a>
+            <a href="vertrag.html" class="barock small-box">ANNUM 1785<br>Contractus</a>
+            <a href="cyber.html" class="cyber small-box">A.D. 2024<br>Cyber-Netz</a>
+            <a href="fanwelt.html" class="barock small-box">ANNUM 1785<br>Admiratores</a>
+            <a href="formular.html" class="barock small-box">ANNUM 1785<br>Admissio Codex</a>
+            <a href="archiv.html" class="barock small-box">OMNIA<br>Voll-Archiv</a>
+        </div>
+
+    </div>
+
+    <div class="footer-text">
+        <div class="note">„Was noch nicht war, kann nicht gerichtet werden.“</div>
+        <div class="quote">
+            Die Welt ist ein Schauplatz,<br>
+            auf dem jeder seine Rolle nach eigenem Belieben zu wählen vermag.
+        </div>
+    </div>
+<div class="siegel-container">
+    <div class="wachssiegel">
+        <span class="siegel-logo">KAW</span>
+        <div class="siegel-rand"></div>
+    </div>
+    <p class="siegel-text">Beglaubigt vom Autoren-Konsortium<br>Anno 1785</p>
+	<div class="siegel-container">
+    <div class="wachssiegel">
+        <!-- Hier wird dein Logo geladen -->
+        <img src="img/logojb2.png" alt="Logo" class="siegel-bild">
+        <div class="siegel-rand"></div>
+    </div>
+    <p class="siegel-text">Beglaubigt vom Autoren-Konsortium<br>Anno 1785</p>
+</div>
+
+</div>
+
+</body>
+</html>

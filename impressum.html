@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | Das Karlsruher Multiversum</title>
+    <style>
+        /* DAS GEISTER-DESIGN (CSS) */
+        body {
+            margin: 0;
+            background-color: #050505;
+            background-image: radial-gradient(circle at 50% 50%, #1a1510 0%, #050505 100%);
+            background-attachment: fixed;
+            color: #d4af37; /* Goldener Text */
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed; top: 0; width: 100%;
+            background: rgba(0,0,0,0.85); backdrop-filter: blur(10px);
+            padding: 15px 0; text-align: center; z-index: 1000;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        nav a { color: #d4af37; text-decoration: none; margin: 0 12px; font-weight: bold; font-size: 0.75rem; text-transform: uppercase; }
+
+        .container {
+            max-width: 900px;
+            margin: 120px auto 60px auto;
+            padding: 40px;
+            background: rgba(10, 10, 10, 0.4);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+        }
+
+        h1, h2 {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-align: center;
+        }
+
+        .multiversum-puls { 
+            animation: deepPulse 6s infinite ease-in-out; 
+            color: #f1e5ac;
+        }
+
+        @keyframes deepPulse {
+            0% { opacity: 0.7; letter-spacing: 4px; text-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
+            50% { opacity: 1; letter-spacing: 6px; text-shadow: 0 0 25px #d4af37; }
+            100% { opacity: 0.7; letter-spacing: 4px; text-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
+        }
+
+        .handschrift {
+            font-family: 'cursive'; /* Falls 'Meddon' nicht geladen, nutzt es Standardschrift */
+            font-size: 1.6rem;
+            color: #008080 !important; /* Türkis/Grün für die Geister */
+            text-align: center;
+            display: block;
+            margin-bottom: 40px;
+        }
+
+        /* LINKS IN GEISTER-GRÜN */
+        a.geister-link {
+            color: #008080;
+            text-decoration: none;
+            transition: all 0.3s;
+            border-bottom: 1px solid transparent;
+        }
+
+        a.geister-link:hover {
+            color: #d4af37;
+            border-bottom: 1px solid #d4af37;
+        }
+
+        /* WIKI-TRUHEN (DETAILS) */
+        details { 
+            background: rgba(0, 0, 0, 0.5); 
+            border: 1px solid rgba(212, 175, 55, 0.3); 
+            margin: 20px 0; 
+            border-radius: 4px;
+        }
+
+        summary { 
+            padding: 15px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            color: #f1e5ac;
+            list-style: none;
+        }
+
+        summary::before { content: "◈ "; color: #d4af37; }
+
+        .inhalt { 
+            padding: 20px; 
+            color: #ccc; 
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .logo-box {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo-box img {
+            width: 250px;
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d4af37, transparent);
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Zurück zum Multiversum</a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="logo-box">
+            <img src="impressum.png" alt="Author Engine Logo">
+            <h1 class="multiversum-puls">Impressum</h1>
+            <span class="handschrift">Das Manifest der Verantwortlichkeit</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px;">
+            <div>
+                <h3 style="border-bottom: 1px solid #d4af37; padding-bottom: 5px;">Angaben</h3>
+                <p>
+                    <strong>Author Engine | ARTBECKO</strong><br>
+                    Joanna Beck<br>
+                    Weltzienstr. 9<br>
+                    76135 Karlsruhe
+                </p>
+            </div>
+            <div>
+                <h3 style="border-bottom: 1px solid #d4af37; padding-bottom: 5px;">Kontakt</h3>
+                <p>
+                    E-Mail: <a href="mailto:post@autoren-multiversum.de" class="geister-link">post@autoren-multiversum.de</a><br>
+                    Web: <a href="http://autoren-multiversum.de" class="geister-link">www.autoren-multiversum.de</a>
+                </p>
+            </div>
+        </div>
+
+        <p style="font-size: 0.9rem; text-align: center; color: #ccc;">
+            <strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</strong><br>
+            Joanna Beck, Weltzienstr. 9, 76135 Karlsruhe
+        </p>
+
+        <hr>
+
+        <!-- DIE GEISTER-TRUHEN -->
+        <details>
+            <summary>Datenschutzerklärung (Vom Schutze der Geheimnisse)</summary>
+            <div class="inhalt">
+                <strong>I. Verschwiegenheit:</strong> Wir bewahren Eure Daten so treu wie ein Beichtgeheimnis.<br><br>
+                <strong>II. Erfassung:</strong> Elektronische Depeschen nutzen wir nur, um Euer Anliegen zu bescheiden.<br><br>
+                <strong>III. Eure Rechte:</strong> Ihr dürft jederzeit Löschung im Feuer der Vergessenheit verlangen.
+            </div>
+        </details>
+
+        <details>
+            <summary>Haftungsausschluß (Das Manifest)</summary>
+            <div class="inhalt">
+                <strong>Inhalte:</strong> Wir stehen für unsere Zeilen ein, bewachen aber nicht den Äther nach fremden Machenschaften.<br><br>
+                <strong>Links:</strong> Für fremde Gasthöfe (Webseiten) leisten wir keine Gewähr.<br><br>
+                <strong>Urheberrecht:</strong> Unsere Schriften entspringen unserem Geiste.
+            </div>
+        </details>
+
+        <details>
+            <summary>Streitbeilegung (Die Justiz-Geister)</summary>
+            <div class="inhalt">
+                Die Plattform zur Online-Streitbeilegung (OS) der EU findest du hier: 
+                <a href="https://europa.eu" target="_blank" class="geister-link">Hier klicken</a>.<br><br>
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </div>
+        </details>
+
+        <div style="text-align: center; margin-top: 60px; opacity: 0.5;">
+            <img src="logo3.png" alt="Artbecko" style="width: 60px; filter: sepia(1) saturate(5);">
+            <p style="font-size: 0.7rem;">© 2026 AUTHOR ENGINE · ARTBECKO</p>
+            <p style="font-size: 0.6rem;">&copy; 2025 JeyBee Pixel &plusmn;&sup3; Print | ART</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

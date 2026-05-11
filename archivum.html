@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Archiv des Autoren-Multiversums</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dunkler Hintergrund für Kontrast */
+            font-family: 'Georgia', serif;
+            color: #5d4037;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .archiv-header {
+            text-align: center;
+            color: #f4e4bc;
+            margin-bottom: 50px;
+        }
+
+        .archiv-header h1 {
+            font-variant: small-caps;
+            font-size: 3em;
+            border-bottom: 2px solid #f4e4bc;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .archiv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .archiv-box {
+            background-color: #f4e4bc; /* Altes Papier-Gelb */
+            border: 3px solid #5d4037;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 8px 8px 0px #8b5e3c;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .archiv-box:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px #8b5e3c;
+        }
+
+        .archiv-box h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            border-bottom: 1px solid #5d4037;
+            padding-bottom: 10px;
+        }
+
+        .archiv-box p {
+            font-style: italic;
+            margin: 20px 0;
+            flex-grow: 1;
+        }
+
+        .button {
+            display: block;
+            background-color: #5d4037;
+            color: #f4e4bc;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .button:hover {
+            background-color: #8b5e3c;
+        }
+
+        .locked {
+            background-color: #d2c19a;
+            color: #777;
+            border: 3px dashed #777;
+            box-shadow: none;
+        }
+
+        .locked .button {
+            background-color: #999;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="archiv-header">
+        <h1>Res Publica Litteraria - Archiv</h1>
+        <p>Anno 1785 | Das Konsortium der freien Federn</p>
+    </div>
+
+    <div class="archiv-grid">
+
+        <!-- 1. KI Hilfe -->
+        <div class="archiv-box">
+            <h3>Auxilium Intelligentia</h3>
+            <p>Digitale Unterstützung für die Gelehrten von heute.</p>
+            <a href="ki_help.html" class="button">Eintreten</a>
+        </div>
+
+        <!-- 2. Pakt -->
+        <div class="archiv-box">
+            <h3>Foedus Literarium</h3>
+            <p>Der heilige Eid unserer Gemeinschaft.</p>
+            <a href="pakt.html" class="button">Eintreten</a>
+        </div>
+
+        <!-- 3. Rechner -->
+        <div class="archiv-box">
+            <h3>Calculatrum</h3>
+            <p>Werkzeuge zur Vermessung eurer Schriften.</p>
+            <a href="rechner.html" class="button">Eintreten</a>
+        </div>
+
+        <!-- 4. Vertrag -->
+        <div class="archiv-box">
+            <h3>Contractus</h3>
+            <p>Die rechtlichen Siegel des Multiversums.</p>
+            <a href="vertrag.html" class="button">Eintreten</a>
+        </div>
+
+        <!-- 5. Cyber -->
+        <div class="archiv-box">
+            <h3>Mundus Cyberealis</h3>
+            <p>Visionen einer fernen, mechanischen Zukunft.</p>
+            <a href="cyber.html" class="button">Eintreten</a>
+        </div>
+
+        <!-- 6. Fanwelt -->
+        <div class="archiv-box">
+            <h3>Mundus Admiratorum</h3>
+            <p>Wo Leser zu Mitgestaltern werden.</p>
+            <a href="fanwelt.html" class="button">Eintreten</a>
+        </div>
+
+        <!-- 7. Formular -->
+        <div class="archiv-box">
+            <h3>Admissio Codex</h3>
+            <p>Reicht eure Manuskripte zur Prüfung ein.</p>
+            <a href="formular.html" class="button">Eintreten</a>
+        </div>
+
+        <!-- 8. Platzhalter 1 -->
+        <div class="archiv-box locked">
+            <h3>Fragmentum I</h3>
+            <p>Dieses Pergament ist noch versiegelt.</p>
+            <a href="#" class="button">Verschlossen</a>
+        </div>
+
+        <!-- 9. Platzhalter 2 -->
+        <div class="archiv-box locked">
+            <h3>Fragmentum II</h3>
+            <p>In Arbeit durch die herrschaftlichen Schreiber.</p>
+            <a href="#" class="button">Verschlossen</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
