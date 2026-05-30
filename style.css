@@ -1,0 +1,231 @@
+/* ==========================================
+   BLINDSEITE / MAINTENANCE STYLING
+   ========================================== */
+
+/* Grundlayout der Seite */
+body {
+    background-color: #0c0a09; /* Dunkler Hintergrund passend zum Bild */
+    color: #a8927d;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.maintenance-container {
+    max-width: 650px;
+    width: 90%;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Titel-Styling angelehnt an dein Logo */
+.main-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+}
+
+.main-title span {
+    color: #d4af37; /* Goldenes ± ³ */
+    font-size: 1.8rem;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.subtitle {
+    color: #00f2ff; /* Türkiser Untertitel wie im Screenshot */
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+.separator {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
+    margin: 30px 0;
+}
+
+/* Text-Inhalt */
+.message-box {
+    background-color: rgba(22, 20, 18, 0.6);
+    border-left: 3px solid #d4af37;
+    padding: 25px;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    border-radius: 4px;
+}
+
+.message-box h2 {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    font-size: 1.2rem;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+.message-box p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+/* Interaktive Kontakt-Box (Hover-Effekt) */
+.kontakt-box {
+    cursor: pointer;
+}
+
+.kontakt-box:hover {
+    background-color: rgba(212, 175, 55, 0.1) !important;
+    border-color: #d4af37 !important;
+    transform: translateY(-2px);
+}
+
+/* Hier fügst du dein bereitgestelltes CSS ein */
+/* 3. DOSSIER GRID-SYSTEM (Repariert) */
+.portal-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.sub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+.presse-box-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(22, 20, 18, 0.9);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+    min-height: 115px;
+}
+.presse-box-link .annum {
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+    color: #d4af37;
+}
+.presse-box-link .titel-text {
+    color: #a8927d;
+    font-size: 0.8rem;
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+.barock { 
+    border-color: #b38b4d; 
+}
+
+
+/* ==========================================
+   PASSPORT-EINGABEFELD STYLING (Optimiert)
+   ========================================== */
+
+.password-form {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 40px auto;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Dunkles Eingabefeld mit schwachem Goldrand – KEIN grelles Weiß mehr */
+.input-group input[type="password"] {
+    flex: 1;
+    padding: 15px 20px;
+    background-color: rgba(22, 20, 18, 0.95); /* Sehr dunkles Braun/Schwarz */
+    border: 1px solid rgba(212, 175, 55, 0.4); /* Dezenter Goldrand */
+    color: #ffffff; /* Weißer Text beim Tippen */
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder-Farbe (Text im Feld vor der Eingabe) abdunkeln */
+.input-group input[type="password"]::placeholder {
+    color: #a8927d; 
+    opacity: 0.7;
+}
+
+.input-group input[type="password"]:focus {
+    outline: none;
+    border-color: #d4af37; /* Hellere Gold-Kante bei Klick */
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+    background-color: rgba(30, 27, 24, 0.95);
+}
+
+/* Button angepasst: Dunkler Hintergrund, goldene Schrift */
+.submit-btn {
+    padding: 15px 25px;
+    background-color: rgba(22, 20, 18, 0.95);
+    border: 1px solid #b38b4d;
+    color: #d4af37; /* Goldene Schrift */
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover-Effekt für den Button */
+.submit-btn:hover {
+    background-color: #b38b4d;
+    color: #161412; /* Invertiert die Farben beim Drüberfahren */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Styling für den "Zurück zur Startseite" Link */
+.back-to-index {
+    display: inline-block;
+    margin-top: 20px;
+    color: #a8927d;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.back-to-index:hover {
+    color: #d4af37; /* Wird gold beim Drüberfahren */
+}
+
+/* Mobile Optimierung */
+@media (max-width: 480px) {
+    .input-group {
+        flex-direction: column;
+    }
+    .submit-btn {
+        width: 100%;
+    }
+}
